@@ -10,6 +10,6 @@ jQuery
 FlexSlider
 http://www.woothemes.com/flexslider/
 
-fancybox
+fancybox 使ってないかも?
 今回はimg画像をフォトギャラリー風に見せる
 https://fancyapps.com/fancybox/3/
