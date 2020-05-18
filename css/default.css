@@ -1,13 +1,14 @@
-html
-{
+html {
     overflow-y: scroll;
 }
 
-body
-{
-    font-family: Verdana, 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
+body {
+    font-family: 'Lato', Verdana, 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3',
+        'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
     font-size: 13px;
     line-height: 1.7;
+
     text-align: left;
+
     color: #999;
 }

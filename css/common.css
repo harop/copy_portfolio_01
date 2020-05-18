@@ -7,31 +7,56 @@ body {
     background-color: #fff;
 }
 
-#wrapper {
-    overflow: hidden;
-    width: 100%;
-    background-color: #fff;
-}
-
 /* header__logo */
 
-.wrap {
+#wrapper {
     overflow: hidden;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
-.header__logo {
-    width: 270px;
+#wrapper .header__logo {
     margin: 30px auto 40px;
+    width: 270px;
 }
 
-.header__logo a {
+#wrapper .header__logo a {
     text-decoration: none;
 }
 
-.logo__image {
+#wrapper .logo__image {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
+}
+
+/* gnavi */
+
+#wrapper .gnavi {
+    clear: both;
+    text-align: center;
+}
+
+#wrapper ul {
+    display: inline;
+    border-left: 1px solid #999;
+}
+
+#wrapper ul li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #999;
+}
+
+#wrapper ul a {
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 17px;
+}
+
+#wrapper li.current a {
+    color: #28d5a4;
 }
