@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Documentオフィシャルサイト模写</title>
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/flexslider.css" />
-  </head>
-  <body>
-    <div id="wrapper">
-      <header class="wrap">
+</head>
+
+<body>
+    <header id="wrapper">
         <h1 class="header__logo">
-          <a href="/"
-            ><img
-              src="./images/logo.jpg"
-              alt="寺田有希オフィシャルサイト"
-              class="logo__image"
-          /></a>
+            <a href="/"><img src="./images/logo.jpg" alt="寺田有希オフィシャルサイト" class="logo__image" /></a>
         </h1>
         <nav class="gnavi">
-          <ul>
-            <li class="current">
-              <a href="./profile/index.html" class="current">profile</a>
-            </li>
-            <li>
-              <a href="./event_schedule/index.html">event&nbsp;schedule</a>
-            </li>
-            <li>
-              <a href="./news_information/index.html"
-                >news&nbsp;/&nbsp;information</a
-              >
-            </li>
-            <li><a href="./blog/index.html">blog</a></li>
-            <li><a href="./gallery/index.html">gallery</a></li>
-            <li><a href="./contact/index.html">contact</a></li>
-          </ul>
+            <ul>
+                <li class="current">
+                    <a href="./profile/index.html" class="current">profile</a>
+                </li>
+                <li>
+                    <a href="./event_schedule/index.html">event&nbsp;schedule</a>
+                </li>
+                <li>
+                    <a href="./news_information/index.html">news&nbsp;/&nbsp;information</a>
+                </li>
+                <li><a href="./blog/index.html">blog</a></li>
+                <li><a href="./gallery/index.html">gallery</a></li>
+                <li><a href="./contact/index.html">contact</a></li>
+            </ul>
         </nav>
-      </header>
-    </div>
-    <section id="mainvisual">
-      <!-- Place somewhere in the <body> of your page -->
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="./images/slide1.jpg" />
-          </li>
-          <li>
-            <img src="./images/slide2.jpg" />
-          </li>
-          <li>
-            <img src="./images/slide3.jpg" />
-          </li>
-        </ul>
-      </div>
-    </section>
+    </header>
+    <article id="mainvisual">
+        <!-- Place somewhere in the <body> of your page -->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="./images/slide1.jpg" />
+                </li>
+                <li>
+                    <img src="./images/slide2.jpg" />
+                </li>
+                <li>
+                    <img src="./images/slide3.jpg" />
+                </li>
+            </ul>
+        </div>
+    </article>
+    <nav id="spnavi"></nav>
+    <main id="contents">
+
+    </main>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer src="./js/jquery.flexslider.js"></script>
     <script type="text/javascript" charset="utf-8">
-      $(window).load(function () {
-        $('.flexslider').flexslider();
-      });
-        
+        $(window).load(function() {
+            $('.flexslider').flexslider();
+        });
+
     </script>
-  </body>
+</body>
+
 </html>

@@ -1,3 +1,5 @@
+/* mobilefirst */
+/* Universal Selector Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +9,16 @@ body {
     background-color: #fff;
 }
 
-/* header__logo */
-
 #wrapper {
     overflow: hidden;
-    margin: 0 auto;
+    width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 #wrapper .header__logo {
-    margin: 30px auto 40px;
     width: 270px;
+    margin: 40px auto 35px;
 }
 
 #wrapper .header__logo a {
@@ -30,33 +31,50 @@ body {
     vertical-align: bottom;
 }
 
-/* gnavi */
-
 #wrapper .gnavi {
-    clear: both;
-    text-align: center;
+    display: none;
+    margin-bottom: 0;
 }
 
-#wrapper .gnavi ul {
-    display: inline;
-    border-left: 1px solid #999;
-}
+/* mediaquery  */
+@media screen and (min-width:992px) {
+    /* 画面サイズが992pxからはここを読み込む */
 
-#wrapper .gnavi ul li {
-    display: inline;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-right: 1px solid #999;
-}
+    /* header__logo */
 
-#wrapper .gnavi ul a {
-    color: #999;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 17px;
-}
+    #wrapper .header__logo {
+        margin: 30px auto 40px;
+    }
 
-#wrapper .gnavi li.current a {
-    color: #28d5a4;
+    /* gnavi */
+
+    #wrapper .gnavi {
+        display: block;
+        clear: both;
+        text-align: center;
+    }
+
+    #wrapper .gnavi ul {
+        display: inline;
+        border-left: 1px solid #999;
+    }
+
+    #wrapper .gnavi ul li {
+        display: inline;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-right: 1px solid #999;
+    }
+
+    #wrapper .gnavi ul a {
+        font-size: 17px;
+        text-decoration: none;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: #999;
+    }
+
+    #wrapper .gnavi li.current a {
+        color: #28d5a4;
+    }
 }
