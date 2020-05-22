@@ -1,6 +1,7 @@
 /* mobilefirst */
 /* Universal Selector Reset */
-* {
+*
+{
     margin: 0;
     padding: 0;
 }
@@ -19,4 +20,11 @@ body
     text-align: left;
     color: #999;
     background-color: #fff;
+}
+
+.clearfix::after
+{
+    display: block;
+    clear: both;
+    content: '';
 }

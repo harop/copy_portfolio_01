@@ -1,75 +1,111 @@
+/* mobilefirst */
 #wrapper {
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #wrapper .header__logo {
-    width: 270px;
-    margin: 40px auto 35px;
+  width: 270px;
+  margin: 40px auto 35px;
 }
 
 #wrapper .header__logo a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #wrapper .logo__image {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
 #wrapper .gnavi {
-    display: none;
-    margin-bottom: 0;
+  display: none;
+  margin-bottom: 0;
 }
 
 #contents {
-    overflow: hidden;
-    width: 1000px;
-    margin: 0 auto 60px;
+  overflow: hidden;
+  width: 1000px;
+  margin: 0 auto 60px;
+}
+
+#spnavi {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #ccc;
+}
+
+#spnavi ul {
+  list-style-type: none;
+}
+
+#spnavi ul li {
+  float: left;
+  width: 50%;
+}
+
+#spnavi ul li a {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-left: none;
 }
 
 /* mediaquery  */
-@media screen and (min-width:992px) {
-    /* 画面サイズが992pxからはここを読み込む */
+@media screen and (min-width: 992px) {
+  /* 画面サイズが992pxからはここを読み込む */
 
-    /* header__logo */
+  /* header__logo */
 
-    #wrapper .header__logo {
-        margin: 30px auto 40px;
-    }
+  #wrapper .header__logo {
+    margin: 30px auto 40px;
+  }
 
-    /* gnavi */
+  /* gnavi */
 
-    #wrapper .gnavi {
-        display: block;
-        clear: both;
-        text-align: center;
-    }
+  #wrapper .gnavi {
+    display: block;
+    clear: both;
+    text-align: center;
+  }
 
-    #wrapper .gnavi ul {
-        display: inline;
-        border-left: 1px solid #999;
-    }
+  #wrapper .gnavi ul {
+    display: inline;
+    border-left: 1px solid #999;
+  }
 
-    #wrapper .gnavi ul li {
-        display: inline;
-        padding-right: 20px;
-        padding-left: 20px;
-        border-right: 1px solid #999;
-    }
+  #wrapper .gnavi ul li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #999;
+  }
 
-    #wrapper .gnavi ul a {
-        font-size: 17px;
-        text-decoration: none;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-        color: #999;
-    }
+  #wrapper .gnavi ul a {
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+  }
 
-    #wrapper .gnavi li.current a {
-        color: #28d5a4;
-    }
+  #wrapper .gnavi li.current a {
+    color: #28d5a4;
+  }
+
+  #spnavi {
+    display: none;
+    margin: 0;
+  }
 }

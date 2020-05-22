@@ -1,12 +1,15 @@
-#mainvisual {
+#mainvisual
+{
     position: relative;
     overflow: hidden;
     width: 100%;
     margin: 15px 0 0;
 }
 
-@media screen and (min-width:992px) {
-    #mainvisual {
+@media screen and (min-width:992px)
+{
+    #mainvisual
+    {
         margin: 60px 0 65px;
     }
 }
